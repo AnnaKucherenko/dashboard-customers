@@ -1,0 +1,77 @@
+.sidebar-hidden{
+    @media screen and (max-width: 1279px) {
+        display: none;
+    }
+}
+
+
+.sidebar{
+    padding: 36px 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin-bottom: 64px;
+}
+.logo__name{
+    margin-left: 12px;
+    margin-right: 4px;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 39px;
+    letter-spacing: 0.01em;  
+}
+
+.logo__text{
+    font-size: 10px;
+    line-height: 15px;
+    letter-spacing: -0.01em;
+    color: #838383;
+}
+
+.logo__icon{
+    fill: black;
+    width: 30px;
+    height: 32px;
+}
+
+.logo__conteiner{
+    display: flex;
+    align-items: baseline;
+}
+
+
+.user{
+    display: flex;
+    align-items: center;
+}
+
+.user__photo{
+    height: 42px;
+    width: 42px;
+    margin-right: 12px;
+}
+
+.user__name,
+.user__position{
+    letter-spacing: 0.01em;
+}
+
+.user__name{
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.user__position{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #757575;
+}
+

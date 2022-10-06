@@ -1,0 +1,36 @@
+.customers__list{
+    margin-top: 15px;
+    @media screen and (min-width: 1280px){
+        display: none;
+    }
+}
+
+.customers__item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #EEEEEE;
+    padding: 6px 0;
+}
+
+.customers__info{
+    
+    color:#9197B3;
+}
+.customers__name{
+    font-size: 16px;
+    color:#292D32;
+}
+.text-container{
+    display: flex;
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+.customers__company{
+    margin-right: 15px;
+}
+.customers__tel,
+.customers__email{
+    font-size: 11px;
+}

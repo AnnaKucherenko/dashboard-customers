@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">  
+    <link rel="stylesheet" href="./sass/main.css"> 
+    
+    <title>Dashboard</title>
+</head>
+<body>
+    <header class="header container">
+        <div class="logo">
+            <svg class="logo__icon" width="30" height="32">
+                <use class="logo__icon" href="./images/icon/svg-sprite1.svg#icon-setting-1"></use>
+            </svg>
+            <div class="logo__conteiner">
+                <p class="logo__name">Dashboard</p>
+                <p class="logo__text">v.01</p>
+            </div>
+            
+        </div>
+
+        <button
+        type="button"
+        class="menu-open js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        >
+            <svg width="20" height="12" class="open-menu_icon">
+                <use href="./images/icon/svg-sprite1.svg#icon-menu"></use>
+            </svg>
+        </button>
+
+        <!--Mobile menu-->
+        <div class="menu-container js-menu-container" id="mobile-menu">
+                <button type="button" class="menu-button js-close-menu">x</button>
+                        
+            
+                <div class="mobile-menu" id="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a class="menu-nav__link link" href="">
+                                <svg width="24" height="24">
+                                    <use class="item__icon" href="./images/icon/svg-sprite1.svg#icon-key-square" ></use>
+                                </svg>
+                                
+                                <p class="item__text">Dashboard</p> 
+                            </a>
+                            
+                                            
+                        </li>
+                        <li class="menu__item"> 
+                            <a class="menu-nav__link link">
+                                <div class="item__conteiner">
+                                    <svg width="24" height="24">
+                                        <use class="item__icon" href="./images/icon/svg-sprite1.svg#icon-d-square-1"></use>
+                                    </svg>
+                                    <p class="item__text">Product</p>
+                                </div>
+                                
+                                <svg width="16" height="16">
+                                    <use class="menu__icon" href="./images/icon/svg-sprite1.svg#icon-chevron-right-2"></use>
+                                </svg>
+                            </a>
+                            
+                        </li>    
+                        <li class="menu__item"> 
+                            <a class="menu-nav__link menu-nav__link--current link" href="">
+                                <div class="item__conteiner">
+                                    <svg width="24" height="24">
+                                        <use class="item__icon" href="./images/icon/svg-sprite1.svg#icon-user-square-1"></use>
+                                    </svg>
+                                    <p class="item__text">Customers</p>
+                                </div>
+                                
+                                <svg width="16" height="16">
+                                    <use class="menu__icon " href="./images/icon/svg-sprite1.svg#icon-chevron-right-2"></use>
+                                </svg> 
+                            </a>
+                            
+                        </li>    
+                        <li class="menu__item"> 
+                            <a class="menu-nav__link link" href="">
+                                <div class="item__conteiner">
+                                    <svg width="24" height="24">
+                                        <use class="item__icon" href="./images/icon/svg-sprite1.svg#icon-wallet-money-2"></use>
+                                    </svg>
+                                    <p class="item__text">Income</p>  
+                                </div>
+                                
+                                <svg width="16" height="16">
+                                    <use class="menu__icon" href="./images/icon/svg-sprite1.svg#icon-chevron-right-2"></use>
+                                </svg>   
+                            </a>
+                            
+                        </li>
+
+                        <li class="menu__item"> 
+                            <a class="menu-nav__link link" href="">
+                                <div class="item__conteiner">
+                                    <svg width="24" height="24">
+                                        <use class="item__icon" href="./images/icon/svg-sprite1.svg#icon-discount-shape-1"></use>
+                                    </svg>
+                                    <p class="item__text">Promote</p>   
+                                </div>
+                                
+                                <svg width="16" height="16">
+                                    <use class="menu__icon" href="./images/icon/svg-sprite1.svg#icon-chevron-right-2"></use>
+                                </svg>  
+                            </a>
+                            
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu-nav__link link" href="">
+                                <div class="item__conteiner">
+                                    <svg width="24" height="24">
+                                        <use class="item__icon" href="./images/icon/svg-sprite1.svg#icon-message-question-1"></use>
+                                    </svg>
+                                    <p class="item__text">Help</p>   
+                                </div>
+                                
+                                <svg width="16" height="16">
+                                    <use class="menu__icon" href="./images/icon/svg-sprite1.svg#icon-chevron-right-2"></use>
+                                </svg>   
+                            </a>
+                            
+                        </li>
+                        
+                                    
+                    </ul>  
+                </div>
+            
+        </div>
+    </header>
+    <!--Main-->
+    <div class="main">
+        
+        <!--Main Content-->
+        <div class="main__content">
+            <!--User greetings-->
+            <p class="user-greetings">Hello Evano 👋🏼,</p>
+            <!--Customers-->
+            <div class="customers">
+                <h1 class="customers__title">All Customers</h1>
+                <p class="customers__text--green">Active Members</p>
+                <input type="text" class="customers__search" placeholder="Search">
+                <!-- Mobile list customers-->
+                <ul class="customers__list">
+                    <li class="customers__item">
+                        <div class="customers__info">
+                            <p class="customers__name">Jane Cooper</p>
+                            <div class="text-container">
+                                <p class="customers__company">Microsoft</p>
+                                <p>United States</p> 
+                            </div>
+                            
+                            <p class="customers__tel">(225) 555-0118</p>
+                            <p class="customers__email">jane@microsoft.com</p>
+                             
+                        </div>
+                        <div class="customers__active customers__active--green">Active</div>
+                    </li>
+                    <li class="customers__item">
+                        <div class="customers__info">
+                            <p class="customers__name">Floyd Miles</p>
+                            <div class="text-container">
+                                <p class="customers__company">Yahoo</p>
+                                <p>Kiribati</p> 
+                            </div>
+                            
+                            <p class="customers__tel">(205) 555-0100</p>
+                            <p class="customers__email">floyd@yahoo.com</p>
+                             
+                        </div>
+                        <div class="customers__active customers__active--red">Inactive</div>
+                    </li>
+                    <li class="customers__item">
+                        <div class="customers__info">
+                            <p class="customers__name">Ronald Richards</p>
+                            <div class="text-container">
+                                <p class="customers__company">Adobe</p>
+                                <p>Israel</p> 
+                            </div>
+                            
+                            <p class="customers__tel">(302) 555-0107</p>
+                            <p class="customers__email">ronald@adobe.com</p>
+                             
+                        </div>
+                        <div class="customers__active customers__active--red">Inactive</div>
+                    </li>
+                    <li class="customers__item">
+                        <div class="customers__info">
+                            <p class="customers__name">Marvin McKinney</p>
+                            <div class="text-container">
+                                <p class="customers__company">Tesla</p>
+                                <p>Iran</p> 
+                            </div>
+                            
+                            <p class="customers__tel">(252) 555-0126</p>
+                            <p class="customers__email">marvin@tesla.com</p>
+                             
+                        </div>
+                        <div class="customers__active customers__active--green">Active</div>
+                    </li>
+                </ul>
+                <!-- desctop table -->
+                <table class="customers__table">
+                    <thead >
+                    <tr>
+                        <th>Customer Name</th>
+                        <th>Company</th>
+                        <th>Phone Number</th>
+                        <th>Email</th>
+                        <th>Country</th>
+                        <th>Status</th>
+                    </tr>
+                    </thead> 
+        
+                    <tbody>
+                        <tr >
+                            <td>Jane Cooper</td>
+                            <td>Microsoft</td>
+                            <td>(225) 555-0118</td>
+                            <td>jane@microsoft.com</td>
+                            <td>United States</td>
+                            <td><div class="customers__active customers__active--green">Active</div></td>
+                        </tr>
+                        <tr >
+                            <td>Floyd Miles</td>
+                            <td>Yahoo</td>
+                            <td>(205) 555-0100</td>
+                            <td>floyd@yahoo.com</td>
+                            <td>Kiribati</td>
+                            <td><div class="customers__active customers__active--red">Inactive</div></td>
+                        </tr>
+                        <tr >
+                            <td>Ronald Richards</td>
+                            <td>Adobe</td>
+                            <td>(302) 555-0107</td>
+                            <td>ronald@adobe.com</td>
+                            <td>Israel</td>
+                            <td><div class="customers__active customers__active--red">Inactive</div></td>
+                        </tr>
+                        <tr >
+                            <td>Marvin McKinney</td>
+                            <td>Tesla</td>
+                            <td>(252) 555-0126</td>
+                            <td>marvin@tesla.com</td>
+                            <td>Iran</td>
+                            <td><div class="customers__active customers__active--green">Active</div></td>
+                        </tr>
+                        <tr >
+                            <td>Jerome Bell</td>
+                            <td>Google</td>
+                            <td>(629) 555-0129</td>
+                            <td>jerome@google.com</td>
+                            <td>Réunion</td>
+                            <td><div class="customers__active customers__active--green">Active</div></td>
+                        </tr>
+                        <tr >
+                            <td>Kathryn Murphy</td>
+                            <td>Microsoft</td>
+                            <td>(406) 555-0120</td>
+                            <td>kathryn@microsoft.com</td>
+                            <td>Curaçao</td>
+                            <td><div class="customers__active customers__active--green">Active</div></td>
+                        </tr>
+                        <tr >
+                            <td>Jacob Jones</td>
+                            <td>Yahoo</td>
+                            <td>(208) 555-0112</td>
+                            <td>jacob@yahoo.com</td>
+                            <td>Brazil</td>
+                            <td><div class="customers__active customers__active--green">Active</div></td>
+                        </tr>
+                        <tr >
+                            <td>Kristin Watson</td>
+                            <td>Facebook</td>
+                            <td>(704) 555-0127</td>
+                            <td>kristin@facebook.com</td>
+                            <td>Åland Islands</td>
+                            <td><div class="customers__active customers__active--red">Inactive</div></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="pagination">
+                    <p class="customers__text--grey">Showing data 1 to 8 of  256K entries</p>
+                    <div  class="pagination__conteiner">
+                        <div class="pagination__item"><</div>
+                        <div class="pagination__item pagination__item--active">1</div>
+                        <div class="pagination__item">2</div>
+                        <div class="pagination__item">3</div>
+                        <div class="pagination__item">4</div>
+                        <div class="pagination__item">...</div>
+                        <div class="pagination__item">40</div>
+                        <div class="pagination__item">></div>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+        <!--Sidebar-->
+        <div class="sidebar-hidden">
+            <div class="sidebar">
+            <div class="sidebar__conteiner">
+                <div class="logo">
+                    <svg class="logo__icon" width="30" height="32">
+                        <use class="logo__icon" href="../images/icon/svg-sprite1.svg#icon-setting-1"></use>
+                    </svg>
+                    <div class="logo__conteiner">
+                        <p class="logo__name">Dashboard</p>
+                        <p class="logo__text">v.01</p>
+                    </div>
+                    
+                </div>
+  
+            
+                <!--Menu-->
+                <div class="menu">
+                    <nav class="menu-nav" id="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a class="menu-nav__link link" href="">
+                                    <svg width="24" height="24">
+                                        <use class="item__icon" href="../images/icon/svg-sprite1.svg#icon-key-square" ></use>
+                                    </svg>
+                                    
+                                    <p class="item__text">Dashboard</p> 
+                                </a>
+                                
+                                                
+                            </li>
+                            <li class="menu__item"> 
+                                <a class="menu-nav__link link">
+                                    <div class="item__conteiner">
+                                        <svg width="24" height="24">
+                                            <use class="item__icon" href="./images/icon/svg-sprite1.svg#icon-d-square-1"></use>
+                                        </svg>
+                                        <p class="item__text">Product</p>
+                                    </div>
+                                    
+                                    <svg width="16" height="16">
+                                        <use class="menu__icon" href="./images/icon/svg-sprite1.svg#icon-chevron-right-2"></use>
+                                    </svg>
+                                </a>
+                                
+                            </li>    
+                            <li class="menu__item"> 
+                                <a class="menu-nav__link menu-nav__link--current link" href="">
+                                    <div class="item__conteiner">
+                                        <svg width="24" height="24">
+                                            <use class="item__icon" href="./images/icon/svg-sprite1.svg#icon-user-square-1"></use>
+                                        </svg>
+                                        <p class="item__text">Customers</p>
+                                    </div>
+                                    
+                                    <svg width="16" height="16">
+                                        <use class="menu__icon " href="./images/icon/svg-sprite1.svg#icon-chevron-right-2"></use>
+                                    </svg> 
+                                </a>
+                                
+                            </li>    
+                            <li class="menu__item"> 
+                                <a class="menu-nav__link link" href="">
+                                    <div class="item__conteiner">
+                                        <svg width="24" height="24">
+                                            <use class="item__icon" href="./images/icon/svg-sprite1.svg#icon-wallet-money-2"></use>
+                                        </svg>
+                                        <p class="item__text">Income</p>  
+                                    </div>
+                                    
+                                    <svg width="16" height="16">
+                                        <use class="menu__icon" href="./images/icon/svg-sprite1.svg#icon-chevron-right-2"></use>
+                                    </svg>   
+                                </a>
+                                
+                            </li>
+
+                            <li class="menu__item"> 
+                                <a class="menu-nav__link link" href="">
+                                    <div class="item__conteiner">
+                                        <svg width="24" height="24">
+                                            <use class="item__icon" href="./images/icon/svg-sprite1.svg#icon-discount-shape-1"></use>
+                                        </svg>
+                                        <p class="item__text">Promote</p>   
+                                    </div>
+                                    
+                                    <svg width="16" height="16">
+                                        <use class="menu__icon" href="./images/icon/svg-sprite1.svg#icon-chevron-right-2"></use>
+                                    </svg>  
+                                </a>
+                                
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu-nav__link link" href="">
+                                    <div class="item__conteiner">
+                                        <svg width="24" height="24">
+                                            <use class="item__icon" href="./images/icon/svg-sprite1.svg#icon-message-question-1"></use>
+                                        </svg>
+                                        <p class="item__text">Help</p>   
+                                    </div>
+                                    
+                                    <svg width="16" height="16">
+                                        <use class="menu__icon" href="./images/icon/svg-sprite1.svg#icon-chevron-right-2"></use>
+                                    </svg>   
+                                </a>
+                                
+                            </li>
+                            
+                                        
+                        </ul>  
+                    </nav>
+                    
+                </div>
+                <!--User-->
+                <div class="user">
+                    <img src="./images/User-photo.jpg" alt="user photo" class="user__photo">
+                    <div>
+                        <p class="user__name">Evano</p>
+                        <p class="user__position">Project Manager</p>  
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+                 
+        
+        </div>
+    
+    <script defer src="./js/menu.js"></script>
+</body>
+</html>
