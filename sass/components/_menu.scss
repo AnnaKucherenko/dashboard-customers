@@ -40,6 +40,21 @@
         border-radius: 8px;
         color:white;
     }
+
+    &:hover,
+    &:focus{
+        
+        height: 46px;
+        background-color: #5932EA;
+        border-radius: 8px;
+        color:white;
+        .item__icon{
+            fill: white;
+        }
+        .menu__icon{
+            fill: white;
+        }
+    }
 }
 
 .item__conteiner{

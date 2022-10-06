@@ -291,6 +291,18 @@ td:nth-child(6) {
   border-radius: 8px;
   color: white;
 }
+.menu-nav__link:hover, .menu-nav__link:focus {
+  height: 46px;
+  background-color: #5932EA;
+  border-radius: 8px;
+  color: white;
+}
+.menu-nav__link:hover .item__icon, .menu-nav__link:focus .item__icon {
+  fill: white;
+}
+.menu-nav__link:hover .menu__icon, .menu-nav__link:focus .menu__icon {
+  fill: white;
+}
 
 .item__conteiner {
   display: flex;
@@ -365,7 +377,7 @@ td:nth-child(6) {
   top: 44px;
   right: 40px;
   background-color: #F9FBFF;
-  background-image: url(./images/icon/search.svg);
+  background-image: url("../images/icon/search.svg");
   background-repeat: no-repeat;
   background-position: 8px;
   border-radius: 10px;
