@@ -9,17 +9,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #EEEEEE;
+    border-bottom: 1px solid var(--table-color);
     padding: 6px 0;
 }
 
 .customers__info{
-    
-    color:#9197B3;
+    color:var(--menu-text);
 }
 .customers__name{
     font-size: 16px;
-    color:#292D32;
+    color:var(--primary-text-color);
 }
 .text-container{
     display: flex;

@@ -13,12 +13,12 @@
    
 }
 
-
 .logo{
     display: flex;
     align-items: center;
     margin-bottom: 64px;
 }
+
 .logo__name{
     margin-left: 12px;
     margin-right: 4px;
@@ -32,11 +32,10 @@
     font-size: 10px;
     line-height: 15px;
     letter-spacing: -0.01em;
-    color: #838383;
+    color: var(--logo-text);
 }
 
 .logo__icon{
-    fill: black;
     width: 30px;
     height: 32px;
 }
@@ -72,6 +71,6 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
-    color: #757575;
+    color: var(--user-text);
 }
 

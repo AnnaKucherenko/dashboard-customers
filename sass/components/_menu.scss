@@ -27,7 +27,10 @@
     font-size: 14px;
     line-height: 21px;
     letter-spacing: -0.01em;
-    color: #9197B3;
+    color: var(--menu-text);
+    .item__icon{
+        fill: var(--menu-text);
+    }
 
     &:first-child{
         display: flex;
@@ -36,7 +39,7 @@
 
     &--current{
         height: 46px;
-        background-color: #5932EA;
+        background-color: var(--color-active);
         border-radius: 8px;
         color:white;
     }
@@ -45,7 +48,7 @@
     &:focus{
         
         height: 46px;
-        background-color: #5932EA;
+        background-color: var(--color-active);
         border-radius: 8px;
         color:white;
         .item__icon{
